@@ -132,7 +132,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-14 flex flex-col gap-20 pb-32 md:gap-28 lg:py-20 bg-gray-200">
+    <section className="py-14 flex flex-col gap-20 md:gap-28 lg:py-20 bg-gray-200">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="relative max-w-2xl mx-auto sm:text-center">
           <div className="relative z-10">

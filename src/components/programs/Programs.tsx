@@ -1,126 +1,76 @@
-import React from 'react';
+import React from "react";
+import Image from "next/image";
 
 const Programs = () => {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-gray-800 text-4xl font-bold mb-10 text-center">Our Programs</h1>
-
-      <section className="mb-12 p-6 bg-white shadow-lg rounded-lg flex items-center">
-        <svg
-          className="text-blue-500 w-16 h-16 mr-6"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M12 8c1.657 0 3-1.343 3-3S13.657 2 12 2 9 3.343 9 5s1.343 3 3 3zm0 2c-2.21 0-4 1.79-4 4v2h8v-2c0-2.21-1.79-4-4-4zm0 14c3.866 0 7-3.134 7-7H5c0 3.866 3.134 7 7 7z"
+    <>
+      <div className="py-8 text-center">
+        <h2 className="text-3xl font-semibold text-gray-800 sm:text-3xl mb-10">
+          Programs
+          <div className="w-20 h-1 bg-blue-600 mx-auto mb-5 mt-2"></div>
+        </h2>
+      </div>
+      <section className="custom-screen">
+        <div className="relative w-full max-w-5xl mb-8">
+          <div className="absolute inset-0 flex justify-end">
+            <div className="w-1/2 h-full flex justify-center items-center">
+              <div className="bg-white p-6 rounded-lg shadow-lg w-11/12 -ml-36">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Programs Developed by our Educational Child Care Experts
+                </h3>
+                <p className="mt-4 text-gray-600">
+                  Our Early Childhood Education Team and the Life Essentials
+                  Curriculum Advisory Council evaluate and update our programs
+                  continuously to ensure every child gets the most effective
+                  educational experience.
+                </p>
+                <button className="mt-6 py-2 px-4 bg-yellow-500 text-white rounded-md">
+                  MEET OUR TEAM
+                </button>
+              </div>
+            </div>
+          </div>
+          <Image
+            src="/img5.jpg"
+            width={500}
+            height={500}
+            alt="Programs Image"
+            className="rounded-lg"
           />
-        </svg>
-        <div>
-          <h2 className="text-gray-800 text-3xl font-semibold mb-2">Infant Care</h2>
-          <p className="text-gray-600">
-            Our Infant Care program provides a safe and nurturing environment for your little ones. We focus on early development skills and provide personalized care to meet the needs of each baby.
-          </p>
+        </div>
+
+        <div className="relative w-full max-w-5xl mb-8">
+          <div className="flex justify-end">
+            <Image
+              src="/img5.jpg"
+              width={500}
+              height={500}
+              alt="Programs Image"
+              className="rounded-lg"
+            />
+          </div>
+          <div className="absolute inset-0 flex justify-start">
+            <div className="w-1/2 h-full flex justify-center items-center">
+              <div className="bg-white p-6 rounded-lg shadow-lg w-11/12 -mr-36">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Programs Developed by our Educational Child Care Experts
+                </h3>
+                <p className="mt-4 text-gray-600">
+                  Our Early Childhood Education Team and the Life Essentials
+                  Curriculum Advisory Council evaluate and update our programs
+                  continuously to ensure every child gets the most effective
+                  educational experience.
+                </p>
+                <button className="mt-6 py-2 px-4 bg-yellow-500 text-white rounded-md">
+                  MEET OUR TEAM
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-
-      <section className="mb-12 p-6 bg-white shadow-lg rounded-lg flex items-center">
-        <svg
-          className="text-green-500 w-16 h-16 mr-6"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M19 11a7 7 0 11-14 0 7 7 0 0114 0zM9 10h6m-3-3v6"
-          />
-        </svg>
-        <div>
-          <h2 className="text-gray-800 text-3xl font-semibold mb-2">Toddler Program</h2>
-          <p className="text-gray-600">
-            The Toddler Program is designed to support your childs growing independence and curiosity. Activities include sensory play, music, and early learning exercises to foster development.
-          </p>
-        </div>
-      </section>
-
-      <section className="mb-12 p-6 bg-white shadow-lg rounded-lg flex items-center">
-        <svg
-          className="text-yellow-500 w-16 h-16 mr-6"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M12 14l9-5-9-5-9 5 9 5zM12 14v10m0-10l-9-5m9 5l9-5"
-          />
-        </svg>
-        <div>
-          <h2 className="text-gray-800 text-3xl font-semibold mb-2">Preschool Program</h2>
-          <p className="text-gray-600">
-            Our Preschool Program prepares children for their next educational steps with a curriculum that promotes literacy, math skills, and social development in a fun and engaging way.
-          </p>
-        </div>
-      </section>
-
-      <section className="mb-12 p-6 bg-white shadow-lg rounded-lg flex items-center">
-        <svg
-          className="text-red-500 w-16 h-16 mr-6"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M16 16v4H8v-4m-2 0a6 6 0 1112 0v4H6v-4z"
-          />
-        </svg>
-        <div>
-          <h2 className="text-gray-800 text-3xl font-semibold mb-2">After-School Care</h2>
-          <p className="text-gray-600">
-            The After-School Care program provides a safe and enriching environment for school-aged children. We offer homework assistance, outdoor play, and a variety of activities to keep them engaged.
-          </p>
-        </div>
-      </section>
-
-      <section className="mb-12 p-6 bg-white shadow-lg rounded-lg flex items-center">
-        <svg
-          className="text-purple-500 w-16 h-16 mr-6"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2m8-14a4 4 0 110-8 4 4 0 010 8z"
-          />
-        </svg>
-        <div>
-          <h2 className="text-gray-800 text-3xl font-semibold mb-2">Summer Camp</h2>
-          <p className="text-gray-600">
-            Our Summer Camp program is filled with exciting adventures and learning opportunities. From field trips to creative projects, children enjoy a summer full of fun and exploration.
-          </p>
-        </div>
-      </section>
-    </div>
+    </>
   );
-}
+};
 
 export default Programs;

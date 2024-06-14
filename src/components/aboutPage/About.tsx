@@ -29,18 +29,18 @@ const About = () => {
               <p className="mt-3 max-w-xl">
                 Welcome to Tigertastic Family Childcare, where every day is a
                 new adventure in learning and growing! We provide a warm,
-                nurturing, and stimulating environment tailored to each
-                childs unique needs. Our dedicated and experienced staff
-                focus on play-based learning to foster creativity, social
-                skills, and a love of learning.
+                nurturing, and stimulating environment tailored to each childs
+                unique needs. Our dedicated and experienced staff focus on
+                play-based learning to foster creativity, social skills, and a
+                love of learning.
               </p>
               <p className="mt-3 max-w-xl">
                 At Tigertastic, safety and individualized attention are our top
                 priorities. We offer a variety of programs, including arts and
                 crafts, story time, outdoor play, music, and STEM activities,
-                all designed to support your childs development. We value
-                open communication with families and strive to create a home
-                away from home for your little ones.
+                all designed to support your childs development. We value open
+                communication with families and strive to create a home away
+                from home for your little ones.
               </p>
               <p className="mt-3 max-w-xl">
                 We value open communication with families and strive to create a
@@ -53,7 +53,7 @@ const About = () => {
                 <h4 className="text-gray-800 text-2xl font-semibold mb-4">
                   Highlights
                 </h4>
-                <ul className="list-disc max-w-xl">
+                <ul className="list-disc max-w-xl space-x-4">
                   <li>Play-based learning environment</li>
                   <li>Customized programs for each child</li>
                   <li>Focus on creativity and social skills</li>
@@ -66,9 +66,9 @@ const About = () => {
                   Hours of Operation
                 </h4>
                 <p className="max-w-xl">
-                  Monday - Friday: 7:00 AM - 6:00 PM
+                  Monday - Friday: 6:00 AM - 12:00 PM
                   <br />
-                  Saturday - Sunday: Closed
+                  Saturday - Sunday: 6:00 AM - 6:00 PM
                 </p>
               </div>
               {/* Application and Parent Handbook */}
@@ -78,8 +78,16 @@ const About = () => {
                 </h4>
                 <p className="max-w-xl">
                   For information on enrollment, our parent handbook, and
-                  policies, please visit our <a href="/enrollment">Enrollment Page</a>.
+                  policies, please check below.
                 </p>
+                <div className="mt-6 space-x-3">
+                  <a href="tel:+12064467203" className="px-6 py-2.5 text-sm font-medium leading-5 text-center text-white capitalize bg-blue-600 rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none">
+                    Enrollment Application
+                  </a> 
+                  <a href="tel:+12064467203" className="px-6 py-2.5 text-sm font-medium leading-5 text-center text-white capitalize bg-green-600 rounded-lg hover:bg-green-500 lg:mx-0 lg:w-auto focus:outline-none">
+                    Parent Handbook
+                  </a> 
+                </div>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Gallery = () => {
   return (
-    <section className="custom-screen text-gray-600 gap-20 py-14 pb-32 md:gap-28 lg:py-28">
+    <section className="custom-screen text-gray-600 gap-20 py-14 pb-14 md:gap-28 lg:py-28">
       <div className="max-w-3xl xl:mx-auto xl:text-center">
         <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
           Our gallery
