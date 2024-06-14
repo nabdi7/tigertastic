@@ -1,7 +1,6 @@
-export type Project = {
-  id: number;
+export type Testimonials = {
+  avatar: string;
   name: string;
-  href: string;
-  image: string;
-  imageLight: string;
+  rating: number;
+  quote: string;
 };

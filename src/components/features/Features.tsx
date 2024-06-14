@@ -8,19 +8,25 @@ const Features = () => {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          strokeWidth={1.5}
           stroke="currentColor"
           className="w-6 h-6"
         >
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
-            d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+            strokeWidth={2}
+            d="M12 14l9-5-9-5-9 5 9 5z"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M12 8c1.657 0 3-1.343 3-3S13.657 2 12 2 9 3.343 9 5s1.343 3 3 3zm0 2c-2.21 0-4 1.79-4 4v2h8v-2c0-2.21-1.79-4-4-4zm0 14c3.866 0 7-3.134 7-7H5c0 3.866 3.134 7 7 7z"
           />
         </svg>
       ),
-      title: "Fast Refresh",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
+      title: "Infant Care",
+      desc: "Ensure your baby receives the utmost care and attention in our safe and nurturing environment. Our experienced staff provide personalized care tailored to each infant's needs.",
     },
     {
       icon: (
@@ -35,12 +41,13 @@ const Features = () => {
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
-            d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+            strokeWidth="2"
+            d="M12 14l9-5-9-5-9 5 9 5zM12 14v10m0-10l-9-5m9 5l9-5"
           />
         </svg>
       ),
-      title: "Analytics",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
+      title: "Preschool",
+      desc: "Prepare your child for academic success with our structured preschool curriculum. We focus on early literacy, numeracy, and social-emotional skills in a supportive and enriching setting.",
     },
     {
       icon: (
@@ -59,8 +66,8 @@ const Features = () => {
           />
         </svg>
       ),
-      title: "Datacenter security",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
+      title: "School-age",
+      desc: "Enrich your child's after-school experience with our stimulating programs that include homework assistance, recreational activities, and opportunities for social growth.",
     },
     {
       icon: (
@@ -79,8 +86,8 @@ const Features = () => {
           />
         </svg>
       ),
-      title: "Build on your terms",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
+      title: "Outdoor activities",
+      desc: "Promote physical health and exploration with our outdoor play areas designed to stimulate curiosity and foster a love for nature.",
     },
     {
       icon: (
@@ -99,8 +106,8 @@ const Features = () => {
           />
         </svg>
       ),
-      title: "Safe to use",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
+      title: "Safe environment",
+      desc: "Rest assured knowing that we prioritize safety in every aspect of our childcare services, ensuring a secure and nurturing environment for your child's well-being and development.",
     },
     {
       icon: (
@@ -130,11 +137,12 @@ const Features = () => {
         <div className="relative max-w-2xl mx-auto sm:text-center">
           <div className="relative z-10">
             <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-              Let’s help power your SaaS
+              Serving Our Beloved Families
             </h3>
             <p className="mt-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              congue, nisl eget molestie varius, enim ex faucibus purus.
+              Discover a nurturing environment where every childs development is
+              cherished. We prioritize providing exceptional care and
+              support.
             </p>
           </div>
           <div

@@ -3,7 +3,7 @@ import React from "react";
 const Cta = () => {
   return (
     <section className="py-28 relative bg-gray-600 my-16 sm:py-32">
-      <div className="relative z-10 max-w-screen-xl mx-auto  md:text-center md:px-8">
+      <div className="custom-screen relative z-10 max-w-screen-xl mx-auto  md:text-center md:px-8">
         <div className="max-w-xl md:mx-auto">
           <p className="text-white text-3xl font-semibold sm:text-4xl">
           Register your child now!

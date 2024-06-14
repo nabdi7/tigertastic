@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Hero from "@/components/hero/Hero"
+import Feature from "@/components/features/feature";
 import About from "@/components/about/About";
 import Features from "@/components/features/Features";
 import Stats from "@/components/stats/Stats";
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <main className="">
       <Hero />
+      <Feature />
       <About />
       <Features />
       <Stats />

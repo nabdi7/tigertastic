@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="custom-screen">
       <div className="mx-auto w-full max-w-screen-xl">
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
-          <div className="mb-6 text-sm font-semibold text-gray-900 ">
+          {/* <div className="mb-6 text-sm font-semibold text-gray-900 ">
             <Link href="/" className="flex-center cursor-pointer uppercase">
               {" "}
               Tigertastic{" "}
@@ -14,10 +14,10 @@ const Footer = () => {
             <p className="text-gray-500 dark:text-gray-400 font-medium mb-4">
               Lorem ipsum dolor sit amet consectetur consequatur{" "}
             </p>
-          </div>
+          </div> */}
           <div>
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
-              Company
+              Quick Links
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4">
@@ -27,17 +27,12 @@ const Footer = () => {
               </li>
               <li className="mb-4">
                 <a href="#" className="hover:underline">
-                  Careers
+                  Programs
                 </a>
               </li>
               <li className="mb-4">
                 <a href="#" className="hover:underline">
-                  Brand Center
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Blog
+                  Contact
                 </a>
               </li>
             </ul>
@@ -49,44 +44,51 @@ const Footer = () => {
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4">
                 <a href="#" className="hover:underline">
-                  Discord Server
+                  Phone: +1 234 567 890
                 </a>
               </li>
               <li className="mb-4">
                 <a href="#" className="hover:underline">
-                  Twitter
+                  Email: tigertastic.daycare@gmail.com
                 </a>
               </li>
               <li className="mb-4">
                 <a href="#" className="hover:underline">
-                  Facebook
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Contact Us
+                  Address: 1234 Seattle, WA
                 </a>
               </li>
             </ul>
           </div>
           <div>
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-              Legal
+              Hours of operation
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4">
                 <a href="#" className="hover:underline">
-                  Privacy Policy
+                  Mon - Fri: 6:00 AM - 12:00 AM
                 </a>
               </li>
               <li className="mb-4">
                 <a href="#" className="hover:underline">
-                  Licensing
+                  Sat - Sun: 6:00 AM - 6:00 PM
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
+              Parental info
+            </h2>
+            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <li className="mb-4">
+                <a href="#" className="hover:underline">
+                  Enrollment Application
                 </a>
               </li>
               <li className="mb-4">
                 <a href="#" className="hover:underline">
-                  Terms &amp; Conditions
+                  Parent Handbook
                 </a>
               </li>
             </ul>
