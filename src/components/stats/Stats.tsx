@@ -7,7 +7,7 @@ const Stats = () => {
       title: "Successful kids",
     },
     {
-      data: "6+",
+      data: "7+",
       title: "Years of providing quality care",
     },
     {

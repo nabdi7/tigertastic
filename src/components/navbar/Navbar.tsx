@@ -15,7 +15,7 @@ const Navbar = () => {
         <ul className="hidden lg:flex space-x-6 text-gray-600">
             <Link href='/' className='flex-center cursor-pointer transition-all hover:font-bold'> Home </Link>
             <Link href='/about' className='flex-center cursor-pointer transition-all hover:font-bold'> About </Link>
-            <Link href='/programs' className='flex-center cursor-pointer transition-all hover:font-bold'> Services </Link>
+            <Link href='/programs' className='flex-center cursor-pointer transition-all hover:font-bold'> Programs </Link>
             <Link href='/contact' className='flex-center cursor-pointer transition-all hover:font-bold'> Contact </Link>
         </ul>
         <div className='hidden lg:flex items-center gap-8 '>

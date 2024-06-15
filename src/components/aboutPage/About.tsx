@@ -4,13 +4,20 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      <div className="py-8 text-center">
+      <div
+        className="py-8 text-center"
+        style={{
+          backgroundImage: `url('/cta.png')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <h2 className="text-3xl font-semibold text-gray-800 sm:text-3xl mb-10">
           About Us
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-5 mt-2"></div>
         </h2>
       </div>
-      <section className="">
+      <section className="pt-10">
         <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-x-12 items-start justify-between lg:flex md:px-8">
           <div className="sm:hidden lg:block lg:max-w-xl">
             <Image
@@ -21,7 +28,7 @@ const About = () => {
               height={500}
             />
           </div>
-          <div className="mt-6 gap-12 sm:mt-0 md:flex lg:block">
+          <div className="mt-6 gap-12 sm:mt-0 md:flex md:flex-col lg:block">
             <div className="max-w-2xl">
               <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
                 Welcome to Tigertastic, Where Learning is Fun!
@@ -74,19 +81,43 @@ const About = () => {
               {/* Application and Parent Handbook */}
               <div className="mt-8">
                 <h4 className="text-gray-800 text-2xl font-semibold mb-4">
-                  Application and Parent Handbook
+                  Our documents and forms
                 </h4>
                 <p className="max-w-xl">
                   For information on enrollment, our parent handbook, and
                   policies, please check below.
                 </p>
-                <div className="mt-6 space-x-3">
-                  <a href="tel:+12064467203" className="px-6 py-2.5 text-sm font-medium leading-5 text-center text-white capitalize bg-blue-600 rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none">
-                    Enrollment Application
-                  </a> 
-                  <a href="tel:+12064467203" className="px-6 py-2.5 text-sm font-medium leading-5 text-center text-white capitalize bg-green-600 rounded-lg hover:bg-green-500 lg:mx-0 lg:w-auto focus:outline-none">
-                    Parent Handbook
-                  </a> 
+                <div className="flex flex-col">
+                  <a
+                    href="tel:+12064467203"
+                    className="mt-6 text-blue-600 hover:underline  "
+                  >
+                    Enrollment Application (PDF)
+                  </a>
+                  <a
+                    href="tel:+12064467203"
+                    className="mt-4 text-blue-600 hover:underline "
+                  >
+                    Registration Form (PDF)
+                  </a>
+                  <a
+                    href="tel:+12064467203"
+                    className="mt-4 text-blue-600 hover:underline "
+                  >
+                    Immunization (PDF)
+                  </a>
+                  <a
+                    href="tel:+12064467203"
+                    className="mt-4 text-blue-600 hover:underline "
+                  >
+                    Parent/Guardian Permission (PDF)
+                  </a>
+                  <a
+                    href="tel:+12064467203"
+                    className="mt-4 text-blue-600 hover:underline "
+                  >
+                    Parent Handbook (PDF)
+                  </a>
                 </div>
               </div>
             </div>
