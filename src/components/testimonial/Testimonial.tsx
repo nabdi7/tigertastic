@@ -32,7 +32,7 @@ const Testimonial = () => {
         <div className="max-w-xl sm:text-center md:mx-auto">
           <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
             See why{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5]">
+            <span className="text-transparent bg-clip-text bg-[#1d80e3ff]">
               the parents
             </span>{" "}
             love us

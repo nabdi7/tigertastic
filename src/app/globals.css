@@ -15,6 +15,17 @@ body {
 
 
 @layer utilities {
+  .btn-primary {
+    @apply px-6 py-2.5 text-sm font-medium leading-5 text-center text-white capitalize bg-[#df0059ff] rounded-lg hover:bg-[#1d80e3ff] lg:mx-0 lg:w-auto focus:outline-none
+  }
+  .btn-secondary {
+    @apply px-6 py-2.5 text-sm font-medium leading-5 text-center text-gray-600 capitalize border border-[#df0059ff] rounded-lg hover:bg-[#df0059ff] hover:text-white lg:mx-0 lg:w-auto focus:outline-none;
+  }
+
+  .btn-circle {
+    @apply px-6 py-2.5 inline-block text-gray-800 font-medium bg-white duration-150 hover:bg-gray-100 active:bg-gray-200 rounded-full
+  }
+  
   .max-container {
     @apply  mx-auto max-w-[1540px];
   }

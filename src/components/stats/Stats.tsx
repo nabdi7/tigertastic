@@ -37,7 +37,7 @@ const Stats = () => {
               We take pride in our excellence
             </h3>
             <p className="mt-3 max-w-xl">
-              Providing quality care for over six years with a focus on
+              Providing quality care for over seven years with a focus on
               nurturing childrens growth and happiness. Join us today!
             </p>
           </div>
@@ -45,7 +45,7 @@ const Stats = () => {
             <ul className="inline-grid gap-y-8 gap-x-14 grid-cols-2">
               {stats.map((item, idx) => (
                 <li key={idx} className="">
-                  <h4 className="text-4xl text-indigo-600 font-semibold">
+                  <h4 className="text-4xl text-[#1d80e3ff] font-semibold">
                     {item.data}
                   </h4>
                   <p className="mt-3 font-medium">{item.title}</p>

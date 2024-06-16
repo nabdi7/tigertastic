@@ -14,7 +14,7 @@ const Features = () => {
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
-            strokeWidth={2}
+            strokeWidth={1.5}
             d="M12 14l9-5-9-5-9 5 9 5z"
           />
           <path
@@ -160,7 +160,7 @@ const Features = () => {
                 key={idx}
                 className="bg-white space-y-3 p-4 border rounded-lg"
               >
-                <div className="text-indigo-600 pb-3">{item.icon}</div>
+                <div className="text-[#1d80e3ff] pb-3">{item.icon}</div>
                 <h4 className="text-lg text-gray-800 font-semibold">
                   {item.title}
                 </h4>

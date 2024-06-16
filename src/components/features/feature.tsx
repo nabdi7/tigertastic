@@ -2,13 +2,13 @@ import React from "react";
 
 const Feature = () => {
   return (
-    <section className="custom-screen">
+    <section className="custom-screen lg:pt-6 pt-14">
       <div className="w-full lg:w-full">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6 mx-2 text-blue-500"
+              className="w-6 h-6 mx-2 text-[#df0059ff]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -27,7 +27,7 @@ const Feature = () => {
           <div className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6 mx-2 text-blue-500"
+              className="w-6 h-6 mx-2 text-[#df0059ff]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -46,7 +46,7 @@ const Feature = () => {
           <div className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6 mx-2 text-blue-500"
+              className="w-6 h-6 mx-2 text-[#df0059ff]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -65,7 +65,7 @@ const Feature = () => {
           <div className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6 mx-2 text-blue-500"
+              className="w-6 h-6 mx-2 text-[#df0059ff]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

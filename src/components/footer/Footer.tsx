@@ -75,36 +75,30 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-screen-xl ">
         <div className="grid grid-cols-1 gap-8  py-6 lg:py-8 lg:grid-cols-4 md:grid-cols-2">
           <div className="space-y-4">
-            <h2 className="text-sm font-semibold text-gray-900 uppercase">
+            <h2 className="text-md font-semibold text-gray-900 uppercase">
               Quick Links
             </h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium space-y-2">
+            <ul className="text-gray-600 dark:text-gray-500 font-medium space-y-3">
               <li>
-                <a href="about" className="hover:underline">
-                  About
-                </a>
+                <Link href='/about' className="hover:underline hover:text-[#df0059ff]"> About </Link>
               </li>
               <li>
-                <a href="programs" className="hover:underline">
-                  Programs
-                </a>
+                <Link href='/programs' className="hover:underline hover:text-[#df0059ff]"> Programs </Link>
               </li>
               <li>
-                <a href="contact" className="hover:underline">
-                  Contact
-                </a>
+                <Link href='/contact' className="hover:underline hover:text-[#df0059ff]"> Contact </Link>
               </li>
             </ul>
           </div>
           <div className="space-y-4">
-            <h2 className="text-sm font-semibold text-gray-900 uppercase">
+            <h2 className="text-md font-semibold text-gray-900 uppercase">
               Contact us
             </h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium space-y-2">
+            <ul className="text-gray-600 dark:text-gray-500 font-medium space-y-3">
               {contactMethods.map((method, index) => (
                 <li key={index} className="flex items-center space-x-2">
                   {method.icon}
-                  <a href={method.link} className="hover:underline">
+                  <a href={method.link} className="hover:underline hover:text-[#df0059ff]">
                     {method.contact}
                   </a>
                 </li>
@@ -112,26 +106,26 @@ const Footer = () => {
             </ul>
           </div>
           <div className="space-y-4">
-            <h2 className="text-sm font-semibold text-gray-900 uppercase">
+            <h2 className="text-md font-semibold text-gray-900 uppercase">
               Hours of operation
             </h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium space-y-2">
+            <ul className="text-gray-600 dark:text-gray-500 font-medium space-y-3">
               <li>Mon - Fri: 6:00 AM - 12:00 AM</li>
               <li>Sat - Sun: 6:00 AM - 6:00 PM</li>
             </ul>
           </div>
           <div className="space-y-4">
-            <h2 className="text-sm font-semibold text-gray-900 uppercase">
+            <h2 className="text-md font-semibold text-gray-900 uppercase">
               Parental info
             </h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium space-y-2">
+            <ul className="text-gray-600 dark:text-gray-500 font-medium space-y-3">
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/application.pdf" target="_blank" className="hover:underline hover:text-[#df0059ff]">
                   Enrollment Application
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline hover:text-[#df0059ff]">
                   Parent Handbook
                 </a>
               </li>
@@ -140,9 +134,15 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p className="text-center text-gray-500 text-sm py-6">
+        <p className="text-center text-gray-600 text-md pt-10 py-4">
           &copy;{new Date().getFullYear()} TigerTastic Family Daycare | All
           rights reserved
+        </p>
+        <p className="text-center text-gray-600 text-sm">
+          Made by{" "}
+          <a href="https://qualitydesigns.site" className="text-[#df0059ff]">
+            Quality Designs
+          </a>
         </p>
       </div>
     </footer>

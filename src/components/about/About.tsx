@@ -28,13 +28,15 @@ const About = () => {
                 open communication with families and strive to create a home
                 away from home for your little ones.
               </p>
-              <Link
-                href="/about"
-                className="mt-6 text-blue-600 hover:underline"
-              >
-                {" "}
-                Learn more{" "}
-              </Link>
+              <div className="mt-5">
+                <Link
+                  href="/about"
+                  className=" btn-primary"
+                >
+                  {" "}
+                  Learn more{" "}
+                </Link>
+              </div>
             </div>
             <div className="flex-none mt-6 lg:mt-0"></div>
           </div>
