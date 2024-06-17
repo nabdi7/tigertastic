@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="relative z-30 bg-[#fbf8f2] ">
       <div className="container custom-screen flex items-center justify-between px-6 py-4 mx-auto ">
-        <div className="text-2xl font-semibold text-[#df0059ff] flex items-center">
+        <div className="text-3xl font-semibold text-[#df0059ff] flex items-center">
           <Link href='/' className='flex items-center cursor-pointer'> <img src="/block1.png" alt="logo" className="pr-2"/> Tigertastic</Link>
         </div>
         <div className='lg:hidden'>

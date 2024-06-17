@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import FAQ from "./Faq";
 
 const Contact = () => {
   const contactMethods = [
@@ -21,6 +22,7 @@ const Contact = () => {
         </svg>
       ),
       contact: "Tigertastic.daycare@example.com",
+      link: "mailto:tigertastic.daycare@gmail.com",
     },
     {
       icon: (
@@ -40,6 +42,7 @@ const Contact = () => {
         </svg>
       ),
       contact: "+1 (206) 446-7203",
+      link: "tel:+12064467203",
     },
     {
       icon: (
@@ -64,6 +67,7 @@ const Contact = () => {
         </svg>
       ),
       contact: "Seattle, Washington, United States.",
+      link: "mailto:tigertastic.daycare@gmail.com",
     },
     {
       icon: (
@@ -78,12 +82,7 @@ const Contact = () => {
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
-            d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+            d="M12 6v6h4.5M12 3.75a8.25 8.25 0 100 16.5 8.25 8.25 0 000-16.5z"
           />
         </svg>
       ),
@@ -116,17 +115,34 @@ const Contact = () => {
               <p>
                 We’re here to help and answer any question you might have, We
                 look forward to hearing from you! Please fill out the form, or
-                us the contact information bellow .
+                use the contact information bellow .
               </p>
               <div>
                 <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center">
                   {contactMethods.map((item, idx) => (
                     <li key={idx} className="flex items-center gap-x-3">
                       <div className="flex-none text-gray-400">{item.icon}</div>
-                      <p>{item.contact}</p>
+                      {item.link ? (
+                        <a
+                          href={item.link}
+                          className="hover:underline hover:text-[#df0059ff]"
+                        >
+                          {item.contact}
+                        </a>
+                      ) : (
+                        <span>{item.contact}</span>
+                      )}
                     </li>
                   ))}
                 </ul>
+              </div>
+              <div className="space-y-3">
+                <p className="pt-5 text-gray-800 text-xl font-semibold sm:text-xl">
+                  Frequently asked questions
+                </p>
+                <div className="">
+                  <FAQ />
+                </div>
               </div>
             </div>
             <div className="flex-1 mt-12 sm:max-w-lg lg:max-w-md ">

@@ -13,7 +13,7 @@ const About = () => {
                 We provide the best chilcare for your little ones
               </h3>
               <p className="mt-3 max-w-xl">
-                Welcome to Tigertastic Family Childcare, where every day is a
+                Welcome to Tigertastic Family Daycare, where every day is a
                 new adventure in learning and growing! We provide a warm,
                 nurturing, and stimulating environment tailored to each
                 child&apos;s unique needs. Our dedicated and experienced staff

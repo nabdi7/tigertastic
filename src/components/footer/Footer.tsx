@@ -71,8 +71,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="custom-screen pb-10">
-      <div className="mx-auto w-full max-w-screen-xl ">
+    <footer className="pb-10 pt-10 bg-gray-100">
+      <div className="custom-screen mx-auto w-full max-w-screen-xl ">
         <div className="grid grid-cols-1 gap-8  py-6 lg:py-8 lg:grid-cols-4 md:grid-cols-2">
           <div className="space-y-4">
             <h2 className="text-md font-semibold text-gray-900 uppercase">
@@ -140,7 +140,7 @@ const Footer = () => {
         </p>
         <p className="text-center text-gray-600 text-sm">
           Made by{" "}
-          <a href="https://qualitydesigns.site" className="text-[#df0059ff]">
+          <a href="https://qualitydesigns.site" target="_blank" className="hover:underline text-[#df0059ff]">
             Quality Designs
           </a>
         </p>

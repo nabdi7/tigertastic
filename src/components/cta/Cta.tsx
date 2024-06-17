@@ -4,7 +4,7 @@ import Link from "next/link";
 const Cta = () => {
   return (
     <section
-      className="py-28 relative  my-16 sm:py-32"
+      className="py-28 relative mt-16 sm:py-32"
       style={{
         backgroundImage: `url('/cta.png')`,
         backgroundSize: "cover",

@@ -26,7 +26,8 @@ const Features = () => {
         </svg>
       ),
       title: "Infant Care",
-      desc: "Ensure your baby receives the utmost care and attention in our safe and nurturing environment. Our experienced staff provide personalized care tailored to each infant's needs.",
+      description:
+        "We offer a nurturing infant care program with personalized attention tailored to each baby's needs, fostering growth and development in a safe and stimulating environment.",
     },
     {
       icon: (
@@ -47,7 +48,8 @@ const Features = () => {
         </svg>
       ),
       title: "Preschool",
-      desc: "Prepare your child for academic success with our structured preschool curriculum. We focus on early literacy, numeracy, and social-emotional skills in a supportive and enriching setting.",
+      description:
+        "Our preschool program is designed to prepare your child for academic success through engaging activities focused on developing early literacy, numeracy, social-emotional skills, and creative expression.",
     },
     {
       icon: (
@@ -55,19 +57,16 @@ const Features = () => {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          strokeWidth={1.5}
           stroke="currentColor"
+          strokeWidth={1.5}
           className="w-6 h-6"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-          />
+          <path d="M22 12L12 2 2 12h3v8h6v-6h2v6h6v-8zM6 22h12M12 22v-2M6 12h12" />
         </svg>
       ),
       title: "School-age",
-      desc: "Enrich your child's after-school experience with our stimulating programs that include homework assistance, recreational activities, and opportunities for social growth.",
+      description:
+        "Our after-school program provides a stimulating environment with homework assistance, recreational activities, and opportunities for social growth and personal development.",
     },
     {
       icon: (
@@ -87,7 +86,8 @@ const Features = () => {
         </svg>
       ),
       title: "Outdoor activities",
-      desc: "Promote physical health and exploration with our outdoor play areas designed to stimulate curiosity and foster a love for nature.",
+      description:
+        "We prioritize outdoor play and exploration in our specially designed outdoor areas, promoting physical health, curiosity, and a love for nature through engaging outdoor experiences.",
     },
     {
       icon: (
@@ -107,7 +107,8 @@ const Features = () => {
         </svg>
       ),
       title: "Safe environment",
-      desc: "Rest assured knowing that we prioritize safety in every aspect of our childcare services, ensuring a secure and nurturing environment for your child's well-being and development.",
+      description:
+        "Your child's safety is our top priority. We ensure a secure and nurturing environment with rigorous safety protocols, allowing you to have peace of mind while your child is in our care.",
     },
     {
       icon: (
@@ -127,12 +128,13 @@ const Features = () => {
         </svg>
       ),
       title: "Flexible",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget molestie varius.",
+      description:
+        "To accommodate the unique needs of our families, we offer flexible scheduling options, including part-time and full-time care, tailored to your family's lifestyle.",
     },
   ];
 
   return (
-    <section className="py-14 flex flex-col gap-20 md:gap-28 lg:py-20 bg-gray-200">
+    <section className="py-14 flex flex-col gap-20 md:gap-28 lg:py-20 bg-gray-100">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="relative max-w-2xl mx-auto sm:text-center">
           <div className="relative z-10">
@@ -141,8 +143,7 @@ const Features = () => {
             </h3>
             <p className="mt-3">
               Discover a nurturing environment where every childs development is
-              cherished. We prioritize providing exceptional care and
-              support.
+              cherished. We prioritize providing exceptional care and support.
             </p>
           </div>
           <div
@@ -164,7 +165,7 @@ const Features = () => {
                 <h4 className="text-lg text-gray-800 font-semibold">
                   {item.title}
                 </h4>
-                <p>{item.desc}</p>
+                <p>{item.description}</p>
               </li>
             ))}
           </ul>

@@ -20,7 +20,7 @@ const Stats = () => {
     },
   ];
   return (
-    <section className="lg:py-14 py-14 bg-gray-200">
+    <section className="lg:py-14 py-14 bg-gray-100">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-x-12 items-start justify-between lg:flex md:px-8">
         <div className="sm:hidden lg:block lg:max-w-xl">
           <Image

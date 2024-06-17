@@ -31,27 +31,29 @@ const About = () => {
           <div className="mt-6 gap-12 sm:mt-0 md:flex md:flex-col lg:block">
             <div className="max-w-2xl">
               <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                Welcome to Tigertastic, Where Learning is Fun!
+                Tigertastic: Discover the Joy of Learning
               </h3>
               <p className="mt-3 max-w-xl">
-                Welcome to Tigertastic Family Childcare, where every day is a
-                new adventure in learning and growing! We provide a warm,
-                nurturing, and stimulating environment tailored to each childs
-                unique needs. Our dedicated and experienced staff focus on
-                play-based learning to foster creativity, social skills, and a
-                love of learning.
+                At Tigertastic Family Daycare, we take pride in creating a
+                nurturing and stimulating environment that fosters the growth
+                and development of every child. Our dedicated and experienced
+                staff are committed to providing individualized attention and
+                tailored learning experiences to meet the unique needs of each
+                child.
               </p>
               <p className="mt-3 max-w-xl">
-                At Tigertastic, safety and individualized attention are our top
-                priorities. We offer a variety of programs, including arts and
-                crafts, story time, outdoor play, music, and STEM activities,
-                all designed to support your childs development. We value open
-                communication with families and strive to create a home away
-                from home for your little ones.
+                Choose Tigertastic for your child&apos;s early education, and
+                you&apos;ll find a warm and welcoming community that values
+                play-based learning, creativity, and social-emotional
+                development. We believe in instilling a love for learning
+                through engaging activities, hands-on exploration, and a safe,
+                inclusive atmosphere that celebrates diversity and individual
+                strengths
               </p>
               <p className="mt-3 max-w-xl">
                 We value open communication with families and strive to create a
-                home away from home for your little ones.
+                home away from home for your little ones. Join the Tigertastic
+                family today!!
               </p>
             </div>
             <div className="flex-none mt-6 md:mt-0 lg:mt-6">
@@ -60,7 +62,7 @@ const About = () => {
                 <h4 className="text-gray-800 text-2xl font-semibold mb-4">
                   Highlights
                 </h4>
-                <ul className="list-disc max-w-xl space-x-4">
+                <ul className="list-disc max-w-xl pl-5">
                   <li>Play-based learning environment</li>
                   <li>Customized programs for each child</li>
                   <li>Focus on creativity and social skills</li>
@@ -89,31 +91,29 @@ const About = () => {
                 </p>
                 <div className="flex flex-col">
                   <a
-                    href="tel:+12064467203"
+                    href="/application.pdf"
+                    target="_blank"
                     className="mt-6 text-blue-600 hover:underline  "
                   >
                     Enrollment Application (PDF)
                   </a>
                   <a
-                    href="tel:+12064467203"
+                    href="/childcareAgreement.pdf"
+                    target="_blank"
                     className="mt-4 text-blue-600 hover:underline "
                   >
-                    Registration Form (PDF)
+                    Childcare Agreement (PDF)
                   </a>
                   <a
-                    href="tel:+12064467203"
+                    href="/immunization.pdf"
+                    target="_blank"
                     className="mt-4 text-blue-600 hover:underline "
                   >
                     Immunization (PDF)
                   </a>
                   <a
-                    href="tel:+12064467203"
-                    className="mt-4 text-blue-600 hover:underline "
-                  >
-                    Parent/Guardian Permission (PDF)
-                  </a>
-                  <a
-                    href="tel:+12064467203"
+                    href="/application.pdf"
+                    target="_blank"
                     className="mt-4 text-blue-600 hover:underline "
                   >
                     Parent Handbook (PDF)
