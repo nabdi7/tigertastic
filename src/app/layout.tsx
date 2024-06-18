@@ -10,6 +10,22 @@ export const metadata: Metadata = {
   title: "TigerTastic Family Daycare",
   description: "A family daycare that provides a safe, nurturing, and educational environment for children.",
   keywords: "childcare, daycare, preschool, early childhood education, TigerTastic Family Daycare",
+  openGraph: {
+    title: "TigerTastic Family Daycare",
+    description: "A family daycare that provides a safe, nurturing, and educational environment for children.",
+    type: "website",
+    siteName: "TigerTastic Family Daycare",
+    url: "https://tigerTasticFamilyDaycare.com",
+
+    images: [
+      {
+        url: "https://tigerTasticFamilyDaycare.com/img5.jpg",
+        width: 500,
+        height: 500,
+        alt: "TigerTastic Family Daycare",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

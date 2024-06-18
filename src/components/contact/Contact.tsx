@@ -104,7 +104,7 @@ const Contact = () => {
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-5 mt-2"></div>
         </h2>
       </div>
-      <section className="pt-10">
+      <section className="pt-14">
         <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
           <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
             <div className="max-w-lg space-y-3">
@@ -136,7 +136,7 @@ const Contact = () => {
                   ))}
                 </ul>
               </div>
-              <div className="space-y-3">
+              <div className="hidden lg:block space-y-3">
                 <p className="pt-5 text-gray-800 text-xl font-semibold sm:text-xl">
                   Frequently asked questions
                 </p>
@@ -186,7 +186,16 @@ const Contact = () => {
                 </button>
               </form>
             </div>
+            <div className="lg:hidden pt-8 space-y-3">
+              <p className="pt-5 text-gray-800 text-xl font-semibold sm:text-xl">
+                Frequently asked questions
+              </p>
+              <div className="">
+                <FAQ />
+              </div>
+            </div>
           </div>
+
           {/* google maps */}
           <div className="mt-20 mb-20">
             <iframe

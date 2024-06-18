@@ -66,7 +66,7 @@ const Footer = () => {
         </svg>
       ),
       contact: "7169 38th Ave S, Seattle, WA",
-      link: "mailto:tigertastic.daycare@gmail.com",
+      link: "https://maps.app.goo.gl/JPdcCHaH6RSksVcp7",
     },
   ];
 

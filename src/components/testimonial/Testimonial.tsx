@@ -6,7 +6,7 @@ const Testimonial = () => {
   const renderStars = (rating: number) => {
     const stars = [];
 
-    // Create full star icons
+    // full star icons
     for (let i = 1; i <= rating; i++) {
       stars.push(
         <span key={i} className="text-yellow-400">
@@ -15,7 +15,7 @@ const Testimonial = () => {
       );
     }
 
-    // Create empty star icons for remaining stars
+    // empty star icons for remaining stars
     for (let i = rating + 1; i <= 5; i++) {
       stars.push(
         <span key={i} className="text-gray-300">
