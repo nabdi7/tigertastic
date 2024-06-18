@@ -41,12 +41,12 @@ const About = () => {
             <div className="flex-none mt-6 lg:mt-0"></div>
           </div>
           <div className="lg:block lg:max-w-xl lg:mt-0 mt-6 flex  w-full h-96 lg:w-full">
-            <Image
+            <img
               src="/img3.jpg"
               className="object-cover md:w-full md:h-full md:max-w-2xl rounded-md"
               alt="about-image"
-              width={500}
-              height={500}
+              // width={500}
+              // height={500}
             />
           </div>
         </div>
