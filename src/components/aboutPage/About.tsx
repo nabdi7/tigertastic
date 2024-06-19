@@ -77,9 +77,9 @@ const About = () => {
                   Hours of Operation
                 </h4>
                 <p className="max-w-xl">
-                  Monday - Friday: 6:00 AM - 12:00 PM
+                  Monday - Friday: 7:00 AM - 6:00 PM
                   <br />
-                  Saturday - Sunday: 6:00 AM - 6:00 PM
+                  Saturday - Sunday: 7:00 AM - 6:00 PM
                 </p>
               </div>
               {/* Application and Parent Handbook */}
