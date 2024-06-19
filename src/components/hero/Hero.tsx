@@ -30,11 +30,11 @@ const Hero = () => {
         </div>
 
         <div className="flex w-full h-96 lg:w-1/2">
-          <img
+          <Image
             src="/img5.jpg"
             alt="hero"
-            // width={500}
-            // height={500}
+            width={500}
+            height={500}
             className="object-cover w-full h-full max-w-2xl rounded-md"
           />
         </div>

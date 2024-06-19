@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="relative z-30 bg-[#fbf8f2] ">
       <div className="container custom-screen flex items-center justify-between px-6 py-4 mx-auto ">
         <div className="text-3xl font-semibold text-[#df0059ff] flex items-center">
-          <Link href='/' className='flex items-center cursor-pointer'> <img src="/block1.png" alt="logo" className="pr-2"/> Tigertastic</Link> {/* width={72} height={72} */}
+          <Link href='/' className='flex items-center cursor-pointer'> <Image src="/block1.png" width={72} height={72} alt="logo" className="pr-2"/> Tigertastic</Link> {/* width={72} height={72} */}
         </div>
         <div className='lg:hidden'>
             <Menu />

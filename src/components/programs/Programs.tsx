@@ -22,10 +22,10 @@ const Programs = () => {
         <div className="relative w-full max-w-5xl mb-8 pb-10 lg:flex lg:items-center lg:justify-between md:flex md:items-center md:justify-between">
           {/* Image */}
           <div className="w-full lg:w-1/2 mb-6 lg:mb-0 md:w-1/2 md:mb-0">
-            <img
+            <Image
               src="/img5.jpg"
-              // width={500}
-              // height={500}
+              width={500}
+              height={500}
               alt="Programs Image"
               className="rounded-lg"
             />
@@ -51,10 +51,10 @@ const Programs = () => {
         <div className="relative w-full max-w-5xl mb-8 pb-10 lg:flex lg:items-center lg:justify-between md:flex md:items-center md:justify-between">
           {/* Image */}
           <div className="w-full lg:w-1/2 mb-6 lg:mb-0 lg:order-2 md:order-2 md:w-1/2 md:mb-0">
-            <img
+            <Image
               src="/img5.jpg"
-              // width={500}
-              // height={500}
+              width={500}
+              height={500}
               alt="Programs Image"
               className="rounded-lg"
             />
@@ -80,10 +80,10 @@ const Programs = () => {
         <div className="relative w-full max-w-5xl mb-8 lg:flex lg:items-center lg:justify-between md:flex md:items-center md:justify-between">
           {/* Image */}
           <div className="w-full lg:w-1/2 mb-6 lg:mb-0 md:w-1/2 md:mb-0">
-            <img
+            <Image
               src="/img5.jpg"
-              // width={500}
-              // height={500}
+              width={500}
+              height={500}
               alt="Programs Image"
               className="rounded-lg"
             />

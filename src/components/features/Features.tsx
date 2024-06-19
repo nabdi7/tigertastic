@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Features = () => {
   const features = [
@@ -47,7 +48,7 @@ const Features = () => {
           />
         </svg>
       ),
-      title: "Preschool",
+      title: "Toddler Care",
       description:
         "Our preschool program is designed to prepare your child for academic success through engaging activities focused on developing early literacy, numeracy, social-emotional skills, and creative expression.",
     },
@@ -64,7 +65,7 @@ const Features = () => {
           <path d="M22 12L12 2 2 12h3v8h6v-6h2v6h6v-8zM6 22h12M12 22v-2M6 12h12" />
         </svg>
       ),
-      title: "School-age",
+      title: "Before/After School Care",
       description:
         "Our after-school program provides a stimulating environment with homework assistance, recreational activities, and opportunities for social growth and personal development.",
     },
@@ -134,6 +135,25 @@ const Features = () => {
   ];
 
   return (
+    <>
+    {/* <motion.div
+        variants={{
+          hidden: {
+            opacity: 0,
+            y: -10,
+          },
+
+          visible: {
+            opacity: 1,
+            y: 0,
+          },
+        }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="animate_top z-40 rounded-lg border border-white bg-white p-7.5 shadow-solid-3 transition-all hover:shadow-solid-4 dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark xl:p-12.5"
+      ></motion.div> */}
     <section className="py-14 flex flex-col gap-20 md:gap-28 lg:py-20 bg-gray-100">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="relative max-w-2xl mx-auto sm:text-center">
@@ -172,6 +192,7 @@ const Features = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
