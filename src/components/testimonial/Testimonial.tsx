@@ -1,7 +1,6 @@
 import React from "react";
 import { testimonials } from "./index";
 import { Testimonials } from "@/components/types/testimonial";
-import Image from "next/image";
 
 const Testimonial = () => {
   const renderStars = (rating: number) => {
@@ -49,9 +48,7 @@ const Testimonial = () => {
               <li key={idx} className="bg-gray-100 p-4 rounded-xl">
                 <figure>
                   <div className="flex items-center gap-x-4">
-                    <Image
-                      width={16}
-                      height={16}
+                    <img
                       src={item.avatar}
                       className="w-16 h-16 rounded-full"
                       alt={`${item.name}'s avatar`}

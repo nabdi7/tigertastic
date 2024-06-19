@@ -1,8 +1,62 @@
 "use client";
-import React from "react";
+import emailjs from '@emailjs/browser';
+import React, { useState, useRef, FormEvent } from 'react';
 import FAQ from "./Faq";
 
+interface ContactFormState {
+  formSubmitted: boolean;
+  contactMessage: string;
+  user_name: string;
+  user_email: string;
+  user_phone: string;
+  message: string;
+}
+
 const Contact = () => {
+  const [{ formSubmitted, contactMessage, user_name, user_email, user_phone, message }, setState] = useState<ContactFormState>({
+    formSubmitted: false,
+    contactMessage: "",
+    user_name: "",
+    user_email: "",
+    user_phone: "",
+    message: "",
+  });
+
+  const formRef = useRef<HTMLFormElement>(null);
+  console.log("Service ID:", process.env.NEXT_PUBLIC_APP_SERVICE_ID);
+  console.log("Template ID:", process.env.NEXT_PUBLIC_APP_TEMPLATE_ID);
+  console.log("User ID:", process.env.NEXT_PUBLIC_APP_USER_ID);
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(process.env.NEXT_PUBLIC_APP_SERVICE_ID ?? "", process.env.NEXT_PUBLIC_APP_TEMPLATE_ID?? "", formRef.current!, process.env.NEXT_PUBLIC_APP_USER_ID ?? "")
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result);
+          setState((prevState) => ({
+            ...prevState,
+            formSubmitted: true,
+            contactMessage: "We got your message. Thanks!",
+          }));
+          setTimeout(() => {
+            setState((prevState) => ({
+              ...prevState,
+              contactMessage: "",
+              user_name: "",
+              user_phone: "",
+              user_email: "",
+              message: "",
+              formSubmitted: false,
+            }));
+          }, 2000);
+        },
+        (error) => {
+          console.error("Email sending failed:", error);
+        }
+      );
+  };
+
   const contactMethods = [
     {
       icon: (
@@ -21,7 +75,7 @@ const Contact = () => {
           />
         </svg>
       ),
-      contact: "Tigertastic.daycare@example.com",
+      contact: "Tigertastic.daycare@gmail.com",
       link: "mailto:tigertastic.daycare@gmail.com",
     },
     {
@@ -66,8 +120,8 @@ const Contact = () => {
           />
         </svg>
       ),
-      contact: "Seattle, Washington, United States.",
-      link: "mailto:tigertastic.daycare@gmail.com",
+      contact: "7169 38th Ave S, Seattle, WA",
+      link: "https://www.google.com/maps/place/7169+38th+Ave.+S,+Seattle,+WA+98118/@47.5379308,-122.2856498,17z/data=!3m1!4b1!4m6!3m5!1s0x54904203b22c251f:0xec165009827df152!8m2!3d47.5379308!4d-122.2856498!16s%2Fg%2F11csm0ttb2?entry=ttu",
     },
     {
       icon: (
@@ -86,7 +140,7 @@ const Contact = () => {
           />
         </svg>
       ),
-      contact: "Hours: Mon - Fri: 6am - 12am, Sat - Sun: 6am - 6pm",
+      contact: "Hours: Mon - Fri: 7am - 6pm, Sat - Sun: 7am - 6pm",
     },
   ];
   return (
@@ -118,7 +172,7 @@ const Contact = () => {
                 use the contact information bellow .
               </p>
               <div>
-                <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center">
+                <ul className="mt-6 flex flex-wrap gap-x-20 gap-y-6 items-center">
                   {contactMethods.map((item, idx) => (
                     <li key={idx} className="flex items-center gap-x-3">
                       <div className="flex-none text-gray-400">{item.icon}</div>
@@ -147,13 +201,17 @@ const Contact = () => {
             </div>
             <div className="flex-1 mt-12 sm:max-w-lg lg:max-w-md ">
               <form
-                onSubmit={(e) => e.preventDefault()}
+                ref={formRef}
+                onSubmit={sendEmail}
                 className="space-y-5 p-6 bg-white border border-gray-200 shadow-sm rounded-lg"
               >
                 <div>
                   <label className="font-medium">Name</label>
                   <input
                     type="text"
+                    name="user_name"
+                    value={user_name}
+                    onChange={(e) => setState((prevState) => ({ ...prevState, user_name: e.target.value }))}
                     required
                     className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                   />
@@ -162,6 +220,9 @@ const Contact = () => {
                   <label className="font-medium">Email</label>
                   <input
                     type="email"
+                    name="user_email"
+                    value={user_email}
+                    onChange={(e) => setState((prevState) => ({ ...prevState, user_email: e.target.value }))}
                     required
                     className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                   />
@@ -170,6 +231,9 @@ const Contact = () => {
                   <label className="font-medium">Phone</label>
                   <input
                     type="text"
+                    name="user_phone"
+                    value={user_phone}
+                    onChange={(e) => setState((prevState) => ({ ...prevState, user_phone: e.target.value }))}
                     required
                     className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                   />
@@ -177,6 +241,9 @@ const Contact = () => {
                 <div>
                   <label className="font-medium">Message</label>
                   <textarea
+                    name="message"
+                    value={message}
+                    onChange={(e) => setState((prevState) => ({ ...prevState, message: e.target.value }))}
                     required
                     className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                   ></textarea>
@@ -184,6 +251,7 @@ const Contact = () => {
                 <button className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150">
                   Submit
                 </button>
+                {formSubmitted && <p className="text-indigo-500">Successfull!! We&apos;ll get back to you shortly.</p>}
               </form>
             </div>
             <div className="lg:hidden pt-8 space-y-3">
@@ -201,7 +269,7 @@ const Contact = () => {
             <iframe
               title="map"
               className="w-full h-96 rounded-lg"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.579996901058!2d-122.0837396846829!3d37.38605177983246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb6c4f7e2d1d%3A0x6d3f8d7f9f1c4f1b!2sGoogleplex!5e0!3m2!1sen!2sca!4v1630362708212!5m2!1sen!2sca"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2693.5342048924504!2d-122.28564979999999!3d47.53793079999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54904203b22c251f%3A0xec165009827df152!2s7169%2038th%20Ave.%20S%2C%20Seattle%2C%20WA%2098118!5e0!3m2!1sen!2sus!4v1718765376967!5m2!1sen!2sus"
               allowFullScreen
               loading="lazy"
             ></iframe>

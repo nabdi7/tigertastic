@@ -54,20 +54,20 @@ const About = () => {
                   We provide the best chilcare for your little ones
                 </h3>
                 <p className="mt-3 max-w-xl">
-                  Welcome to Tigertastic Family Daycare, where every day is a
-                  new adventure in learning and growing! We provide a warm,
-                  nurturing, and stimulating environment tailored to each
-                  child&apos;s unique needs. Our dedicated and experienced staff
-                  focus on play-based learning to foster creativity, social
-                  skills, and a love of learning.
+                  Welcome to TigerTastic Daycare, where every day is a new
+                  adventure in learning and growing! When it comes to finding
+                  what&apos;s best for your child, look no further than
+                  TigerTastic Daycare. Dedicated to providing a fun and safe
+                  space for your child to play and grow and socialize, we are
+                  here to be a part of the village that raises your child.
+                  We are located in Seattle, WA
                 </p>
                 <p className="mt-3 max-w-xl">
-                  At Tigertastic, safety and individualized attention are our
-                  top priorities. We offer a variety of programs, including arts
-                  and crafts, story time, outdoor play, music, and STEM
-                  activities, all designed to support your child&apos;s
-                  development. We value open communication with families and
-                  strive to create a home away from home for your little ones.
+                  TigerTastic Daycare is proud to offer full-time & part-time daycare that
+                  allows your child to be cared for by highly trained and
+                  trusted individuals with their best interests at heart. To
+                  enroll your child in our home family daycare, contact
+                  TigerTastic Daycare today!
                 </p>
                 <div className="mt-5">
                   <Link href="/about" className=" btn-primary">
@@ -79,12 +79,12 @@ const About = () => {
               <div className="flex-none mt-6 lg:mt-0"></div>
             </div>
             <div className="lg:block lg:max-w-xl lg:mt-0 mt-6 flex  w-full h-96 lg:w-full">
-              <Image
+              <img
                 src="/img3.jpg"
                 className="object-cover md:w-full md:h-full md:max-w-2xl rounded-md"
                 alt="about-image"
-                width={500}
-                height={500}
+                // width={500}
+                // height={500}
               />
             </div>
           </div>

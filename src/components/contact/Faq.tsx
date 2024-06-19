@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "Do you provide meals and snacks?",
     answer:
-      "Yes. We take pride in offering nutritious meals and snacks to fuel your child's day. Our menus are carefully curated to meet dietary needs and promote healthy eating habits.",
+      "Yes. We take pride in offering free healthy breakfast, lunch and snacks to fuel your child's day. Our menus are carefully curated to meet dietary needs and promote healthy eating habits.",
   },
   {
     question: "Do you offer part-time or full-time enrollment options?",

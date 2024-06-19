@@ -20,12 +20,12 @@ const About = () => {
       <section className="pt-14">
         <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-x-12 items-start justify-between lg:flex md:px-8">
           <div className="sm:hidden lg:block lg:max-w-xl">
-            <Image
+            <img
               src="/img3.jpg"
               className="rounded-lg"
               alt="about page image"
-              width={500}
-              height={500}
+              // width={500}
+              // height={500}
             />
           </div>
           <div className="mt-6 gap-12 sm:mt-0 md:flex md:flex-col lg:block">
@@ -42,13 +42,15 @@ const About = () => {
                 child.
               </p>
               <p className="mt-3 max-w-xl">
-                Choose Tigertastic for your child&apos;s early education, and
-                you&apos;ll find a warm and welcoming community that values
-                play-based learning, creativity, and social-emotional
-                development. We believe in instilling a love for learning
-                through engaging activities, hands-on exploration, and a safe,
-                inclusive atmosphere that celebrates diversity and individual
-                strengths
+                Choose Tigertastic for your child&apos;s growth. Providing and
+                caring for your child can be difficult. TigerTastic Daycare is
+                here to make it easier. We are proud to offer before
+                school/afterschool daycare so that you know your child is in
+                good hands and has viable transportation to get to school safely
+                and on time. We offer a premium afterschool daycare that offers
+                them a place where they can finish their homework, socialize
+                with friends, and make memories while they wait for you to leave
+                work.
               </p>
               <p className="mt-3 max-w-xl">
                 We value open communication with families and strive to create a

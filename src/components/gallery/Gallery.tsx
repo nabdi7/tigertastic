@@ -10,33 +10,33 @@ const Gallery = () => {
         </h3>
       </div>
       <div className="max-w-7xl mx-auto mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-        <Image 
+        <img
           src="/img5.jpg"
           className="rounded-lg"
           alt="Gallery Image 1"
-          width={500}
-          height={500}
+          // width={500}
+          // height={500}
         />
-        <Image
+        <img
           src="/img5.jpg"
           className="rounded-lg"
           alt="Gallery Image 2"
-          width={500}
-          height={500}
+          // width={500}
+          // height={500}
         />
-        <Image
+        <img
           src="/img5.jpg"
           className="rounded-lg"
           alt="Gallery Image 3"
-          width={500}
-          height={500}
+          // width={500}
+          // height={500}
         />
-        <Image
+        <img
           src="/img5.jpg"
           className="rounded-lg"
           alt="Gallery Image 4"
-          width={500}
-          height={500}
+          // width={500}
+          // height={500}
         />
       </div>
     </section>

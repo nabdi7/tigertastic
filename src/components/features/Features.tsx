@@ -28,7 +28,7 @@ const Features = () => {
       ),
       title: "Infant Care",
       description:
-        "We offer a nurturing infant care program with personalized attention tailored to each baby's needs, fostering growth and development in a safe and stimulating environment.",
+        "We offer a nurturing infant care. Our attentive staff ensure your little one receives responsive care, engaging playtime, and a clean, comfortable space for napping and feeding.",
     },
     {
       icon: (
@@ -50,7 +50,7 @@ const Features = () => {
       ),
       title: "Toddler Care",
       description:
-        "Our preschool program is designed to prepare your child for academic success through engaging activities focused on developing early literacy, numeracy, social-emotional skills, and creative expression.",
+        "We offer nurturing care from experienced staff in a safe and enriching environment for toddlers. Our services focus on age-appropriate activities that encourage development through play and exploration.",
     },
     {
       icon: (
@@ -67,7 +67,7 @@ const Features = () => {
       ),
       title: "Before/After School Care",
       description:
-        "Our after-school program provides a stimulating environment with homework assistance, recreational activities, and opportunities for social growth and personal development.",
+        "We provide reliable care for your children before and after school hours, providing stimulating environment with recreational activities, and opportunities for social growth and personal development.",
     },
     {
       icon: (
