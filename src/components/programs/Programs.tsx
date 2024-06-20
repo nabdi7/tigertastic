@@ -31,8 +31,8 @@ const Programs = () => {
             />
           </div>
           {/* Card content */}
-          <div className="w-full lg:w-1/2 lg:pl-0 md:w-1/2 md:pl-10">
-            <div className="bg-white p-6 rounded-lg shadow-lg lg:w-11/12 md:w-12/12 lg:-ml-36 md:-ml-36">
+          <div className="w-full lg:w-1/2 lg:pl-0 md:w-1/2 md:pl-10 relative z-10">
+            <div className="bg-white p-6 rounded-lg shadow-lg lg:w-11/12 md:w-12/12 lg:-ml-36 md:-ml-36 lg:-mt-0 md:-mt-0 -mt-32 sm:-mt-32 ">
               <h3 className="text-xl font-semibold text-gray-800">
                 Infant Care Services
               </h3>
@@ -60,8 +60,8 @@ const Programs = () => {
             />
           </div>
           {/* Card content */}
-          <div className="w-full lg:w-1/2 z-30 lg:pr-0 md:w-1/2 md:pr-10">
-            <div className="bg-white p-6 rounded-lg shadow-lg lg:w-11/12 md:w-12/12 lg:ml-36 md:-mr-36">
+          <div className="w-full lg:w-1/2 lg:pr-0 md:w-1/2 md:pr-10 relative z-10">
+            <div className="bg-white p-6 rounded-lg shadow-lg lg:w-11/12 md:w-12/12 lg:ml-36 md:-mr-36 lg:-mt-0 md:-mt-0 -mt-32 sm:-mt-32">
               <h3 className="text-xl font-semibold text-gray-800">
                 Toddler Care Services
               </h3>
@@ -89,8 +89,8 @@ const Programs = () => {
             />
           </div>
           {/* Card content */}
-          <div className="w-full lg:w-1/2 lg:pl-0 md:w-1/2 md:pl-10">
-            <div className="bg-white p-6 rounded-lg shadow-lg lg:w-11/12 md:w-12/12 lg:-ml-36 md:-ml-36 md:-mt-0 ">
+          <div className="w-full lg:w-1/2 lg:pl-0 md:w-1/2 md:pl-10 relative z-10">
+            <div className="bg-white p-6 rounded-lg shadow-lg lg:w-11/12 md:w-12/12 lg:-ml-36 md:-ml-36 lg:-mt-0 md:-mt-0 -mt-32 sm:-mt-32">
               <h3 className="text-xl font-semibold text-gray-800">
                 Preschool-Age Childcare
               </h3>

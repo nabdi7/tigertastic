@@ -140,7 +140,7 @@ const Contact = () => {
           />
         </svg>
       ),
-      contact: "Hours: Mon - Fri: 7am - 6pm, Sat - Sun: 7am - 6pm",
+      contact: "Hours: Mon - Fri: 7:00 am - 6:00 pm",
     },
   ];
   return (

@@ -78,8 +78,6 @@ const About = () => {
                 </h4>
                 <p className="max-w-xl">
                   Monday - Friday: 7:00 AM - 6:00 PM
-                  <br />
-                  Saturday - Sunday: 7:00 AM - 6:00 PM
                 </p>
               </div>
               {/* Application and Parent Handbook */}
