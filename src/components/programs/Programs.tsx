@@ -5,7 +5,7 @@ const Programs = () => {
   return (
     <>
       <div
-        className="py-8 text-center"
+        className="py-12 text-center"
         style={{
           backgroundImage: `url('/cta.png')`,
           backgroundSize: "cover",
@@ -17,7 +17,7 @@ const Programs = () => {
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-5 mt-2"></div>
         </h2>
       </div>
-      <section className="custom-screen pt-14">
+      <section className="custom-screen py-16">
         {/* infant */}
         <div className="relative w-full max-w-5xl mb-8 pb-10 lg:flex lg:items-center lg:justify-between md:flex md:items-center md:justify-between">
           {/* Image */}

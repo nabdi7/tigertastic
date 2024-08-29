@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <div
-        className="py-8 text-center"
+        className="py-12 text-center"
         style={{
           backgroundImage: `url('/cta.png')`,
           backgroundSize: "cover",
@@ -17,7 +17,7 @@ const About = () => {
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-5 mt-2"></div>
         </h2>
       </div>
-      <section className="pt-14">
+      <section className="py-16">
         <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-x-12 items-start justify-between lg:flex md:px-8">
           <div className="sm:hidden lg:block lg:max-w-xl">
             <img

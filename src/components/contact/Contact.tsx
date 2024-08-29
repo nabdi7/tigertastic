@@ -146,7 +146,7 @@ const Contact = () => {
   return (
     <>
       <div
-        className="py-8 text-center"
+        className="py-12 text-center"
         style={{
           backgroundImage: `url('/cta.png')`,
           backgroundSize: "cover",
@@ -158,7 +158,7 @@ const Contact = () => {
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-5 mt-2"></div>
         </h2>
       </div>
-      <section className="pt-14">
+      <section className="py-16">
         <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
           <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
             <div className="max-w-lg space-y-3">
