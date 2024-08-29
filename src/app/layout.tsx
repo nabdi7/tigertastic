@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import { siteConfig } from "@/config/site";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
   title: "TigerTastic Family Daycare",
   description: "A family daycare that provides a safe, nurturing, and educational environment for children.",
   keywords: "childcare, daycare, preschool, early childhood education, TigerTastic Family Daycare",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_URL ?? siteConfig.url),
   openGraph: {
     title: "TigerTastic Family Daycare",
     description: "A family daycare that provides a safe, nurturing, and educational environment for children.",
@@ -26,6 +28,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: `/site.webmanifest`,
 };
 
 export default function RootLayout({
