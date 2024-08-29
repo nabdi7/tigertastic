@@ -15,15 +15,6 @@ html, body {
 
 
 @layer utilities {
-  /* Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-
-  .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
   
   .btn-primary {
     @apply px-6 py-2.5 text-sm font-medium leading-5 text-center text-white capitalize bg-[#df0059ff] rounded-lg hover:bg-[#1d80e3ff] lg:mx-0 lg:w-auto focus:outline-none
@@ -48,3 +39,22 @@ html, body {
   }
   
 }
+
+/* Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide{
+  scrollbar-width: none;
+}
+
+  /* Chrome, Safari and Opera */
+  /* .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  } */

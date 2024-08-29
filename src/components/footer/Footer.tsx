@@ -120,12 +120,12 @@ const Footer = () => {
             </h2>
             <ul className="text-gray-600 dark:text-gray-500 font-medium space-y-3">
               <li>
-                <a href="/application.pdf" target="_blank" className="hover:underline hover:text-[#df0059ff]">
+                <a href="/application.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline hover:text-[#df0059ff]">
                   Enrollment Application
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline hover:text-[#df0059ff]">
+                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline hover:text-[#df0059ff]">
                   Parent Handbook
                 </a>
               </li>
