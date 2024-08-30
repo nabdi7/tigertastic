@@ -11,28 +11,28 @@ const Gallery = () => {
       </div>
       <div className="max-w-7xl mx-auto mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         <img
-          src="/img5.jpg"
+          src="/img1.jpg"
           className="rounded-lg"
           alt="Gallery Image 1"
           // width={500}
           // height={500}
         />
         <img
-          src="/img5.jpg"
+          src="/img4.jpg"
           className="rounded-lg"
           alt="Gallery Image 2"
           // width={500}
           // height={500}
         />
         <img
-          src="/img5.jpg"
+          src="/img2.jpg"
           className="rounded-lg"
           alt="Gallery Image 3"
           // width={500}
           // height={500}
         />
         <img
-          src="/img5.jpg"
+          src="/img6.jpg"
           className="rounded-lg"
           alt="Gallery Image 4"
           // width={500}

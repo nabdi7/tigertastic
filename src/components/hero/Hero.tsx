@@ -31,7 +31,7 @@ const Hero = () => {
 
         <div className="flex w-full h-96 lg:w-1/2">
           <img
-            src="/img5.jpg"
+            src="/img3.jpg"
             alt="hero"
             // width={500}
             // height={500}
