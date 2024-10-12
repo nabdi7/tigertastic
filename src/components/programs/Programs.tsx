@@ -81,7 +81,7 @@ const Programs = () => {
           {/* Image */}
           <div className="w-full lg:w-1/2 mb-6 lg:mb-0 md:w-1/2 md:mb-0">
             <img
-              src="/img5.jpg"
+              src="/img3.jpg"
               // width={500}
               // height={500}
               alt="Programs Image"
